@@ -1,0 +1,27 @@
+.containerUhr {
+    width: 50vw;
+    background-color: black;
+    padding: 30px;
+}
+
+.innerContainerUhr {
+    background-color: black;
+    color: white;
+    border: 10px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+.innerContainerUhr div p:first-of-type {
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.innerContainerUhr div p:last-of-type {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
