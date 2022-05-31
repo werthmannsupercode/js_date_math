@@ -103,11 +103,11 @@ console.log(date4);
 //Lev1_4
 console.log('%cLev1_4', "color: green");
 
-let daysInAMonth = (monat, jahr) => {
+let daysInAMonth = (monat0, jahr0) => {
 
     let datum = new Date();
-    datum.setFullYear(jahr);
-    datum.setMonth(monat);
+    datum.setFullYear(jahr0);
+    datum.setMonth(monat0);
 
 }
 
@@ -131,7 +131,7 @@ let list = [
     "Dezember"
 ];
 
-let nameOfTheMonth = (jahr1, monat1, tag) => {
+let nameOfTheMonth = (jahr1, monat1, tag1) => {
     let datum1 = new Date();
     datum1.setFullYear(jahr1);
     datum1.setMonth(monat1 - 1);
@@ -191,3 +191,56 @@ istEsEinWochenende(12, 15, 2019);
 istEsEinWochenende(2, 16, 2001);
 istEsEinWochenende(2, 1, 2020);
 istEsEinWochenende(2, 29, 2020);
+
+// MATH ================================================
+console.log('%cMATH', "color: tomato");
+
+//Lev1_1
+console.log('%cLev1_1', "color: green");
+
+console.log(Math.PI);
+const pi = Math.PI;
+let roundedPi = pi.toFixed(2);
+console.log(roundedPi);
+
+//Lev1_2
+console.log('%cLev1_2', "color: green");
+
+let array = [
+    3.14,
+    193.4464,
+    0.8596433607,
+    -2.940629089,
+];
+
+function rounded() {
+    for (let i = 0; i < array.length; i++) {
+        console.log(Math.round(array[i]));
+    }
+}
+
+rounded();
+
+//Lev1_3
+console.log('%cLev1_3', "color: green");
+
+let randomNum = Math.random();
+console.log(randomNum);
+
+let randomNum1_10 = Math.random() * 10;
+console.log(randomNum1_10);
+
+let randomNum1_100 = Math.random() * 100;
+console.log(randomNum1_100);
+
+//Lev1_4
+console.log('%cLev1_4', "color: green");
+
+let niedrigsterWert = Math.min(393, 205, 479, 47, 376, 267, 385, 2, 190, 383, 286, 462, 115, 138, 331, 409, 427, 245, 224, 276, 483, 55, 147, 177, 208, 347, 135, 282, 33, 270, 475, 426, 476, 453, 474, 351, 219, 358, 354, 410, 240, 139, 371, 356, 277, 202, 264, 204, 447, 488);
+console.log(niedrigsterWert);
+
+let höchsterWert = Math.max(393, 205, 479, 47, 376, 267, 385, 2, 190, 383, 286, 462, 115, 138, 331, 409, 427, 245, 224, 276, 483, 55, 147, 177, 208, 347, 135, 282, 33, 270, 475, 426, 476, 453, 474, 351, 219, 358, 354, 410, 240, 139, 371, 356, 277, 202, 264, 204, 447, 488);
+console.log(höchsterWert);
+
+
+
